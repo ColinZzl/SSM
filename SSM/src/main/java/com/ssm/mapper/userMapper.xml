@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssm.dao.IUserDao">
+
+	<!-- 結果集 -->
+	<resultMap id="yfSignUpResult" type="com.ssm.domain.User">
+		<result property="id" column="id" />
+		<result property="userName" column="user_name" />
+		<result property="password" column="password" />
+		<result property="age" column="age" />
+	</resultMap>
+
+    <!-- 根据Id查询 -->
+	<select id="getUserById" parameterType="int" resultMap="yfSignUpResult">
+		SELECT * from  user  where id = #{id} 
+	</select>
+	
+</mapper>
