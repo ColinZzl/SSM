@@ -1,11 +1,12 @@
 package com.ssm.dao;
 
-import org.springframework.stereotype.Component;
 
 import com.ssm.domain.User;
 
+import javax.annotation.Resource;
 
-@Component
+
+@Resource
 public interface IUserDao {
 	
 	public User getUserById(int id); 
