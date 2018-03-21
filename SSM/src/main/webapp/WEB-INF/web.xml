@@ -8,7 +8,7 @@
     <context-param>  
         <param-name>contextConfigLocation</param-name>  
         <param-value>classpath:spring-mybatis.xml</param-value>  
-    </context-param>  
+    </context-param>
     <!--数据库的配置-->
    <!-- 配置程序参数文件 -->
    <!-- 编码过滤器 -->  
